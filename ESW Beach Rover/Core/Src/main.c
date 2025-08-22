@@ -21,8 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "stdio.h"
 #include <string.h>
+#include "NRF24.h"
+#include "NRF24_reg_addresses.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -37,6 +38,8 @@
 
 #define NRF_CSN_HIGH()   HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, GPIO_PIN_SET);
 #define NRF_CSN_LOW()    HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9, GPIO_PIN_RESET);
+
+#define PLD_SIZE 32
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
